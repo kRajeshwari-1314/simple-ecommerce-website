@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🛍️ My Store</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script> <!-- for icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStyle - Electronics & Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                <span>TechStyle</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#mobiles">Mobiles</a></li>
+                    <li><a href="#laptops">Laptops</a></li>
+                    <li><a href="#clothes">Clothes</a></li>
+                    <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">🛍️ My Store</div>
-    <ul class="nav-links">
-      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#"><i class="fas fa-tshirt"></i> Fashion</a></li>
-      <li><a href="#"><i class="fas fa-laptop"></i> Electronics</a></li>
-      <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-    </ul>
-  </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TechStyle - Electronics & Fashion</h1>
+            <p>Discover the latest trends in technology and fashion</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
 
-  <!-- Welcome Section -->
-  <header class="welcome">
-    <h1>✨ Welcome to My Store ✨</h1>
-    <p>Your one-stop destination for Fashion & Electronics</p>
-  </header>
+    <main class="container">
+        <section id="mobiles" class="product-section">
+            <h2 class="section-title">Mobile Phones</h2>
+            <div class="products" id="mobile-products">
+                <!-- Mobile products will be loaded by JavaScript -->
+            </div>
+        </section>
 
-  <!-- Products -->
-  <div class="container">
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="T-Shirt">
-      <h2>T-Shirt</h2>
-      <p class="price">₹499</p>
-      <button>Add to Cart</button>
-    </div>
+        <section id="laptops" class="product-section">
+            <h2 class="section-title">Laptops</h2>
+            <div class="products" id="laptop-products">
+                <!-- Laptop products will be loaded by JavaScript -->
+            </div>
+        </section>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop" alt="Laptop">
-      <h2>Laptop</h2>
-      <p class="price">₹45,999</p>
-      <button>Add to Cart</button>
-    </div>
+        <section id="clothes" class="product-section">
+            <h2 class="section-title">Clothing</h2>
+            <div class="products" id="clothing-products">
+                <!-- Clothing products will be loaded by JavaScript -->
+            </div>
+        </section>
+    </main>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Headphones">
-      <h2>Headphones</h2>
-      <p class="price">₹1,499</p>
-      <button>Add to Cart</button>
-    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>TechStyle offers the latest in technology and fashion at competitive prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@techstyle.com</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TechStyle. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <div class="product">
-     <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop" alt="Watch">
-      <h2>Watch</h2>
-      <p class="price">₹2,999</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <div class="product">
-     <img src="https://images.unsplash.com/photo-1542293787938-c9e299b8808f?w=400&h=300&fit=crop" alt="Bag">
-      <h2>Bag</h2>
-      <p class="price">₹999</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <div class="product">
-    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400&h=300&fit=crop" alt="Sunglasses">
-      <h2>Sunglasses</h2>
-      <p class="price">₹799</p>
-      <button>Add to Cart</button>
-    </div>
-  </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
   <!-- Footer -->
   <footer>
